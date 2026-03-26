@@ -10,12 +10,17 @@ const inter = Inter({
 
 export const metadata = {
   title: 'Devon Schwab',
-  description: 'ACE Nominee. Emmy Honored. TV Editor, Producer, Filmmaker, and Visual Artist based in NYC.',
+  description: 'Devon Schwab',
   openGraph: {
     title: 'Devon Schwab',
-    description: 'ACE Nominee. Emmy Honored. TV Editor, Producer, Filmmaker, and Visual Artist.',
+    description: 'Devon Schwab',
     url: 'https://www.devonschwab.com',
     siteName: 'Devon Schwab',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Devon Schwab',
+    description: 'Devon Schwab',
   },
 };
 
