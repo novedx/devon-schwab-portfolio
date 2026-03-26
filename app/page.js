@@ -20,7 +20,7 @@ export default function WorkPage() {
         </FadeIn>
 
         <FadeIn delay="3">
-          <p className="mt-3 text-white/30 text-xs tracking-[0.15em] uppercase">
+          <p className="mt-3 text-white/60 text-sm tracking-[0.15em] uppercase font-semibold">
             ACE Award Nominee &nbsp;·&nbsp; Emmy Honored
           </p>
         </FadeIn>
@@ -29,7 +29,7 @@ export default function WorkPage() {
       {/* ── Work Grid ── */}
       <section>
         <FadeIn>
-          <p className="text-[10px] tracking-[0.25em] uppercase text-white/30 mb-8">
+          <p className="text-xs tracking-[0.25em] uppercase text-white/60 mb-8 font-semibold">
             Selected Work
           </p>
         </FadeIn>

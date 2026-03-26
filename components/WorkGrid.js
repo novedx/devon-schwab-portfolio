@@ -65,6 +65,18 @@ const projects = [
     thumb: yt('pJzutGCEr3g'),
   },
   {
+    title: 'Newspaper Movie',
+    role: 'Editor',
+    url: 'https://www.youtube.com/watch?v=A3SyKtmr7bs',
+    thumb: yt('A3SyKtmr7bs'),
+  },
+  {
+    title: 'How Do We Talk About Mass Shootings if They Always Happen?: Decade Edition',
+    role: 'Editor / Post Production Lead',
+    url: 'https://www.youtube.com/watch?v=dCWTFAIN-O0',
+    thumb: yt('dCWTFAIN-O0'),
+  },
+  {
     title: 'Bang.Bang',
     role: 'Editor',
     url: 'https://vimeo.com/310215939',
