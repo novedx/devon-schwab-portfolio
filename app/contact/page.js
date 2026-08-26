@@ -3,7 +3,7 @@ import FadeIn from '@/components/FadeIn';
 
 export const metadata = {
   title: 'Contact — Devon Schwab',
-  description: 'Get in touch with Devon Schwab — editor, producer, and filmmaker based in NYC.',
+  description: 'Get in touch with Devon Schwab — creative director and post-production producer based in NYC.',
 };
 
 export default function ContactPage() {
@@ -17,7 +17,7 @@ export default function ContactPage() {
       </FadeIn>
 
       <FadeIn delay="2">
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">
+        <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-2">
           Let's work together.
         </h2>
       </FadeIn>

@@ -1,32 +1,26 @@
 import Image from 'next/image';
 import FadeIn from '@/components/FadeIn';
+import ClientLogos from '@/components/ClientLogos';
 
 export const metadata = {
   title: 'Bio — Devon Schwab',
-  description: 'ACE Nominee. Emmy Honored. TV Editor with 10+ years at NBC\'s Saturday Night Live and Late Night With Seth Meyers.',
+  description: 'ACE Nominee. Emmy Honored. Creative Director and Post-Production Producer with 10+ years at NBC\'s Saturday Night Live and Late Night With Seth Meyers.',
 };
 
 export default function BioPage() {
   return (
-    <div className="pt-28 pb-24 px-6 md:px-10 max-w-[1100px] mx-auto">
-
-      {/* Page label */}
-      <FadeIn delay="1">
-        <p className="text-[10px] tracking-[0.25em] uppercase text-white/30 mb-12">
-          Bio
-        </p>
-      </FadeIn>
+    <div className="pt-40 pb-24 px-6 md:px-10 max-w-[1100px] mx-auto">
 
       <div className="grid grid-cols-1 md:grid-cols-[1fr_1.6fr] gap-12 md:gap-16 items-start">
 
         {/* ── Left: Photo ── */}
         <FadeIn delay="2">
-          <div className="relative aspect-[3/4] bg-zinc-900 overflow-hidden">
+          <div className="relative aspect-[3/4] bg-[#11162a] overflow-hidden">
             <Image
-              src="https://static.wixstatic.com/media/e7518d_22be84f74852432eb263412b65b33972~mv2.png/v1/fill/w_1064,h_1904,al_r,q_95,usm_0.66_1.00_0.01,enc_avif,quality_auto/e7518d_22be84f74852432eb263412b65b33972~mv2.png"
-              alt="Devon Schwab with the Ghostbusters Ecto-1"
+              src="/photos/devon-editbay.jpg"
+              alt="Devon Schwab at the edit bay, cutting Late Night with Seth Meyers"
               fill
-              className="object-cover object-top"
+              className="object-cover object-top grayscale"
               priority
             />
           </div>
@@ -35,7 +29,7 @@ export default function BioPage() {
         {/* ── Right: Text ── */}
         <div className="flex flex-col gap-6">
           <FadeIn delay="1">
-            <h2 className="text-xl md:text-2xl font-bold leading-snug tracking-tight text-white/90">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold leading-snug tracking-tight text-white text-center md:text-left">
               ACE Nominee. Emmy Honored.<br />10+ Years at SNL.
             </h2>
           </FadeIn>
@@ -43,77 +37,72 @@ export default function BioPage() {
           <FadeIn delay="2">
             <div className="space-y-4 text-white/60 text-sm md:text-[15px] leading-relaxed">
               <p>
-                Devon Schwab is an ACE Award-nominated, Emmy Honored film and television editor,
-                producer, and visual artist based in New York City.
+                Devon Schwab is an ACE Award-nominated, Emmy Honored creative director and
+                post-production producer based in New York City.
               </p>
               <p>
                 Over more than a decade at NBC, Devon has been a key collaborator on two of
-                television's most beloved late-night programs — <em>Saturday Night Live</em> and
-                <em> Late Night With Seth Meyers</em> — cutting sketches, digital shorts, and
-                original content that reaches millions of viewers each week.
+                television's most beloved late-night programs: <em>Saturday Night Live</em> and
+                <em> Late Night With Seth Meyers</em>. On most pieces, especially at{' '}
+                <em>Late Night</em>, his involvement starts well before the cameras roll, shaping
+                structure, selects, and pacing alongside writers and producers. It carries
+                through to delivery, often finishing the cut hours, sometimes minutes, before air
+                on content that reaches millions of viewers each week.
               </p>
               <p>
-                As Lead Editor on <em>The Amber Ruffin Show</em> (Peacock), Devon helmed the edit
-                on 50+ episodes across three seasons, bringing a sharp comic sensibility and
-                distinct visual voice to every cut.
+                As Post Production Lead on <em>The Amber Ruffin Show</em> (Peacock), Devon led the show's editorial voice across 50+ episodes and three seasons,
+                translating a room full of ideas into a sharp, consistent comic sensibility,
+                night after night.
               </p>
               <p>
                 Devon's work spans comedy, narrative film, music video, documentary, and branded
-                content. Fluent in Adobe Premiere, After Effects, Photoshop, and AVID Media
-                Composer, Devon approaches every project as a storyteller first.
+                content. More recently, he's stepped into producing and creative-direction work,
+                leading small cross-functional teams of graphic artists, engineers, and editors
+                from concept through delivery. He's now focused on bringing that same sharp
+                editorial judgment and creative leadership to producer and creative director
+                roles in network television, in-house brand teams, and agencies alike.
               </p>
               <p>
-                Based in New York City.{' '}
-                <span className="text-white/40 italic">Occasional Ghostbuster.</span>
+                Based in New York City.
               </p>
-            </div>
-          </FadeIn>
-
-          {/* Credentials */}
-          <FadeIn delay="3">
-            <div className="flex flex-wrap gap-3 pt-2">
-              {[
-                'ACE Award Nominee',
-                'Emmy Honored',
-                'Saturday Night Live',
-                'Late Night With Seth Meyers',
-                'The Amber Ruffin Show',
-              ].map((cred) => (
-                <span
-                  key={cred}
-                  className="text-[10px] tracking-[0.15em] uppercase text-white/40 border border-white/10 px-3 py-1.5"
-                >
-                  {cred}
-                </span>
-              ))}
-            </div>
-          </FadeIn>
-
-          {/* IMDb button */}
-          <FadeIn delay="4">
-            <div className="pt-2">
-              <a
-                href="https://www.imdb.com/name/nm1903222/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border border-white/20 px-5 py-3 text-[11px] tracking-[0.2em] uppercase text-white/70 hover:text-white hover:border-white/50 transition-colors"
-              >
-                <span className="text-[#f5c518] font-black text-xs">IMDb</span>
-                View Profile
-                <svg
-                  className="w-3 h-3 opacity-50"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path d="M7 17L17 7M7 7h10v10" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </a>
             </div>
           </FadeIn>
         </div>
       </div>
+
+      {/* Clients */}
+      <div className="pt-20 max-w-[900px] mx-auto text-center">
+        <FadeIn delay="3">
+          <p className="inline-block font-display text-lg md:text-xl tracking-[0.15em] uppercase text-white/80 font-semibold border border-white/20 px-6 py-2 mb-10">
+            Clients
+          </p>
+        </FadeIn>
+        <ClientLogos />
+      </div>
+
+      {/* IMDb button */}
+      <FadeIn delay="4">
+        <div className="pt-12 flex justify-center">
+          <a
+            href="https://www.imdb.com/name/nm1903222/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 border border-white/20 px-5 py-3 text-[11px] tracking-[0.2em] uppercase text-white/70 hover:text-white hover:border-white/50 transition-colors"
+          >
+            <span className="text-[#f5c518] font-black text-xs">IMDb</span>
+            View Profile
+            <svg
+              className="w-3 h-3 opacity-50"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path d="M7 17L17 7M7 7h10v10" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </FadeIn>
     </div>
   );
 }
