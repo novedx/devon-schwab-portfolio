@@ -36,7 +36,6 @@ export default function WorkPage() {
               'Creative Direction',
               'Post-Production Leadership',
               'Comedy & Narrative',
-              'Team Leadership',
               'Rapid-Turnaround',
               'Live & Scripted Content',
             ].map((skill) => (
